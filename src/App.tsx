@@ -102,6 +102,20 @@ export function App() {
         </div>
         {activeIssue ? <ActiveIssue issue={activeIssue} /> : null}
       </div>
+      <footer className="p-4 flex justify-end gap-4">
+        <a
+          className="text-xs inline-flex font-bold text-gray-600 underline"
+          href="https://www.npbee.me/posts/command-based-undo"
+        >
+          Post
+        </a>
+        <a
+          className="text-xs inline-flex font-bold text-gray-600 underline"
+          href="https://github.com/npbee/undo-redo-playground"
+        >
+          Source
+        </a>
+      </footer>
     </div>
   );
 }
